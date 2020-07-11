@@ -28,6 +28,17 @@ Crea una funcion llamada: challenge1  que realice lo siguiente:
 
 // CREA TU FUNCION challenge1 aqui:
 
+function challenge1 (){
+    var botton = prompt("¿Cuantos Botonoes Quieres?");
+    var targetDiv = document.getElementById("dummy");
+    for (iJ = 0; botton > iJ; iJ++){
+        var newDiv = document.createElement("button");
+        newDiv.textContent = nombres[iJ];
+        targetDiv.appendChild(newDiv);
+    }
+
+}
+
 
 
 /*
@@ -35,7 +46,11 @@ Crea una funcion llamada: challenge2 que utilizando un FOR convierta todos los n
 */
 
 // CREA TU FUNCION challenge2 2 aquí.
-
+function challenge2() {
+    for (var i = 0; i<nombres.length; i++) {
+        console.log(nombres[i].toLocaleUpperCase())
+    }
+}
 
 
 /*
@@ -80,7 +95,7 @@ Deberia escribir en consola
 
     <button onclick="challenge1()">Challenge 1</button>
     <button onclick="challenge2()">Challenge 2</button>
-    <button onclick="challenge3()">Challenge 2</button>
+    <button onclick="challenge3()">Challenge 3</button>
 
   
 <div id = "dummy">
